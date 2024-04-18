@@ -14,6 +14,7 @@
   * https://www.anaconda.cloud
   * https://colab.research.google.com/
 
-# Reference
+# References / Resources
+* Regex 101 https://regex101.com/
 * "Fluent Python" by Luciano Ramalho
 * How to reach me: dave@developintelligence.com
