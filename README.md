@@ -1,8 +1,8 @@
 # CVent-Apprenti-Academy
 
-## Weds 4/16 Polls
-* https://xoyondo.com/op/kwgwxo220u5x383
-* https://xoyondo.com/op/m6v4ffpx3vb7am2 (what should we cover?)
+## Thu 4/17 Polls
+* https://xoyondo.com/op/82rki34bf8bonex
+* https://xoyondo.com/op/840c9hejyyemop8
 
 ## Lunch Break Schedule
 * 09:30-10:00 Pacific / __12:30-1:00 Eastern__
