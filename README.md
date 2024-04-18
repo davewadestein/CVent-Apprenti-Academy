@@ -18,3 +18,7 @@
 * Regex 101 https://regex101.com/
 * "Fluent Python" by Luciano Ramalho
 * How to reach me: dave@developintelligence.com
+
+# Recordings
+* Day 2: https://pluralsight.zoom.us/rec/share/YqcV4AG9h8THki0L2wEJwh2WsRud4ugyHVa7HJQa026qY1--cTc_A1As1-231uMY.0XlAbAUXJ4gCVTnO 
+* __`str(2) + 'h'.upper() + '^' + 'JHK'.lower() + 'a'.upper() + 'Z'.lower()`__
