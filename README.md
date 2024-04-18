@@ -14,5 +14,6 @@
   * https://www.anaconda.cloud
   * https://colab.research.google.com/
 
-
+# Reference
+* "Fluent Python" by Luciano Ramalho
 * How to reach me: dave@developintelligence.com
