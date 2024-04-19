@@ -2,6 +2,15 @@
 
 ## Fri 4/17 
 * CVent Lunch n Learn 10:00-10:30 Pacific / 1:00-1:30 Eastern
+* __`*args / **kwargs`__
+* list comprehensions?
+* more OO: Class Methods / Static Methods / ...
+* The __`collections`__ module: Better versions of containers
+* mini-project
+  * Blackjack
+  * Rock Scissors Paper
+* LeetCode break
+
 ## Lunch Break Schedule
 * 09:30-10:00 Pacific / __12:30-1:00 Eastern__
 * __11:30-12:00 Pacific__ / 02:30-3:00 Eastern
