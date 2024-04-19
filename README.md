@@ -1,6 +1,7 @@
 # CVent-Apprenti-Academy
 
 ## Fri 4/17 
+* Poll: https://xoyondo.com/op/45vvo1s7em7tmd9
 * CVent Lunch n Learn 10:00-10:30 Pacific / 1:00-1:30 Eastern
   * is this instead of or in addition to our first lunch break?
 * __`*args / **kwargs`__
