@@ -2,6 +2,7 @@
 
 ## Fri 4/17 
 * CVent Lunch n Learn 10:00-10:30 Pacific / 1:00-1:30 Eastern
+  * is this instead of or in addition to our first lunch break?
 * __`*args / **kwargs`__
 * list comprehensions?
 * more OO: Class Methods / Static Methods / ...
