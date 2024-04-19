@@ -1,5 +1,8 @@
 # CVent-Apprenti-Academy
 
+## Week 1 Evaluation...PLEASE FILL OUT!
+* https://www.surveymonkey.com/r/HXKPMX8
+  
 ## Fri 4/17 
 * Poll: https://xoyondo.com/op/45vvo1s7em7tmd9
 * CVent Lunch n Learn 10:00-10:30 Pacific / 1:00-1:30 Eastern
