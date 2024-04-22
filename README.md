@@ -8,6 +8,7 @@
 * pick up what we didn't cover on Friday
   * more OO: Class Methods / Static Methods / ...
   * The __`collections`__ module: Better versions of containers
+* test-driven development / testing
 * mini-project
 * LeetCode?
 
