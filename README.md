@@ -1,14 +1,19 @@
 # CVent-Apprenti-Academy
 
-## Week 1 Evaluation...PLEASE FILL OUT!
+## Week 1 Evaluation...PLEASE FILL OUT (if you didn't do it last Friday)
 * https://www.surveymonkey.com/r/HXKPMX8
-  
-## Fri 4/17 
-* Poll: https://xoyondo.com/op/45vvo1s7em7tmd9
-* CVent Lunch n Learn 10:00-10:30 Pacific / 1:00-1:30 Eastern
-  * is this instead of or in addition to our first lunch break?
-* __`*args / **kwargs`__
-* list comprehensions?
+
+## Mon 4/22
+* today's poll: https://xoyondo.com/op/7fz5rs0rfzjrr2x
+* pick up what we didn't cover on Friday
+  * more OO: Class Methods / Static Methods / ...
+  * The __`collections`__ module: Better versions of containers
+* mini-project
+* LeetCode?
+
+## Fri 4/19
+* ~~__`*args / **kwargs`__~~
+* ~~list comprehensions?~~
 * more OO: Class Methods / Static Methods / ...
 * The __`collections`__ module: Better versions of containers
 * mini-project
