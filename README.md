@@ -3,6 +3,7 @@
 ## Tue 4/23
 * today's polls
   * https://xoyondo.com/op/ssw0qpbc4ranh7q
+  * https://xoyondo.com/op/ug0t1ojhbpuvw2y
 * mini-project
 * more OO: Class Methods / Static Methods / ...
   * The __`collections`__ module: Better versions of containers
