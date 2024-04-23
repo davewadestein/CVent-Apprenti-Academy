@@ -1,10 +1,14 @@
 # CVent-Apprenti-Academy
 
-## Week 1 Evaluation...PLEASE FILL OUT (if you didn't do it last Friday)
-* https://www.surveymonkey.com/r/HXKPMX8
-
+## Tue 4/23
+* today's polls
+  * https://xoyondo.com/op/ssw0qpbc4ranh7q
+* mini-project
+* more OO: Class Methods / Static Methods / ...
+  * The __`collections`__ module: Better versions of containers
+* test-driven development / testing
+  
 ## Mon 4/22
-* today's poll: https://xoyondo.com/op/7fz5rs0rfzjrr2x
 * pick up what we didn't cover on Friday
   * more OO: Class Methods / Static Methods / ...
   * The __`collections`__ module: Better versions of containers
@@ -38,5 +42,7 @@
 * How to reach me: dave@developintelligence.com
 
 # Recordings
-* Day 2: https://pluralsight.zoom.us/rec/share/YqcV4AG9h8THki0L2wEJwh2WsRud4ugyHVa7HJQa026qY1--cTc_A1As1-231uMY.0XlAbAUXJ4gCVTnO 
+* Apr 22: https://pluralsight.zoom.us/rec/share/sjv7aV4OjI5asTAIctCFRwevqb-_Gh9X4sFm3zcvBz1uaHj24iY4kbDh7k-wZhM.ycYHMUx6XVhHk45q 
+* __`'f'.upper() + chr(35) + 'K'.lower() * 2 + str(8 // 4) + 'D'.lower() + 'pY'.swapcase()`__
+* Apr 16: https://pluralsight.zoom.us/rec/share/YqcV4AG9h8THki0L2wEJwh2WsRud4ugyHVa7HJQa026qY1--cTc_A1As1-231uMY.0XlAbAUXJ4gCVTnO 
 * __`str(2) + 'h'.upper() + '^' + 'JHK'.lower() + 'a'.upper() + 'Z'.lower()`__
