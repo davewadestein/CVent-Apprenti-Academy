@@ -1,11 +1,15 @@
 # CVent-Apprenti-Academy
 
+## Wed 4/24
+* let's get back to coding–I spent too much time on additional topics yesterday
+  * I propose we skip the OO Part 2 notebook, but I will formalize that in a poll
+    
 ## Tue 4/23
 * today's polls
   * https://xoyondo.com/op/ssw0qpbc4ranh7q
   * https://xoyondo.com/op/ug0t1ojhbpuvw2y
 * mini-project
-* more OO: Class Methods / Static Methods / ...
+* ~~more OO: Class Methods / Static Methods / ...~~
   * The __`collections`__ module: Better versions of containers
 * test-driven development / testing
   
