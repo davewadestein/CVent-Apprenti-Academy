@@ -1,6 +1,7 @@
 # CVent-Apprenti-Academy
 
 ## Wed 4/24
+* mid-morning poll: https://xoyondo.com/op/y79ept6rp3vkboy
 * let's get back to coding–I spent too much time on additional topics yesterday
   * I propose we skip the OO Part 2 notebook, but I will formalize that in a poll
 * coding...let's continue with what we were writing on Monday, and/or...
