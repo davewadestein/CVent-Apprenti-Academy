@@ -32,11 +32,6 @@ Examples:
 * `password1234` has a score of 5
 * `john` has a score of 0
 
-For this exercise, edit the `length_score` function in the `rate_password.py` file. 
-This function takes a password as an argument and returns its length score as a number. 
-The `TestLengthScore` class in `test_rate_password.py` contains tests for it, you may 
-edit those as well if you wish.
-
 ## 2. Commonality check
 
 It is also a terrible idea to choose a password that's common. It is guaranteed 
@@ -80,9 +75,6 @@ A few examples:
                      - 2 for only one of each)
 * `Oo7,28=r+MU}`: 6 pts (1 + 1 for case + 2 for numbers + 2 for symbols)
 
-For this part, edit the `complexity_score` function in `rate_password.py`. As previously, 
-you can find the tests for this in `test_rate_password.py`. This will likely be the most 
-complicated part of the problem, do not hesitate to call for help.
 
 ## 4. Complete evaluation
 
