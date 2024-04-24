@@ -8,12 +8,12 @@ class Stack(list):
     """
 
     class StackUnderFlowError(Exception):
-        pass
+        """Custom exception to indicate underflow."""
 
     def __init__(self, debug=False):
         """Create a stack. If debug is True, we'll print some debugging..."""
         self.debug = debug
-        super().__init__() 
+        super().__init__() # finish init in the parent class
     
     def push(self, item):
         """Push an item on the stack."""
