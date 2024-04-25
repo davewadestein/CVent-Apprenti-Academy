@@ -104,4 +104,4 @@ Here is another example for you to try your code on:
 What are the values of the registers at the end? As a bonus, can you identify
 what operation the last five instructions are effectively doing?
 
-[Part 2](https://github.com/davewadestein/ADI-Learn-to-Code/blob/main/projects/EXAPUNKS/EXAPunks-Part-2.md)
+[Part 2](https://github.com/davewadestein/CVent-Apprenti-Academy/edit/main/project/EXAPUNKS/EXAPunks-Part-2.md)
