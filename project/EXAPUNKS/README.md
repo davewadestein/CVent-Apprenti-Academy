@@ -1,11 +1,6 @@
 
 # EXAPUNKS Emulator (Adapted for Cvent/Apprenti)
 
-* Notes
-* sys.exit(1) is a way of bailing out
-* another way is raise ValueError('bad register') or Exception('unknown instruction')
-* don't stress too much over validation
-
 ## Introduction
 
 [EXAPUNKS] is a 2018 video game by Zachtronics. It is set in a cyberpunk past
@@ -51,13 +46,13 @@ abbreviations will be used to represent required operands:
 ### You will be coding this along with a partner, one part at a time.
 ### DO NOT ATTEMPT A PART UNTIL YOU'VE COMPLETED THE PREVIOUS PART!
 
-[Part 1](https://github.com/davewadestein/ADI-Learn-to-Code/blob/main/projects/EXAPUNKS/EXAPunks-Part-1.md)
+[Part 1](https://github.com/davewadestein/CVent-Apprenti-Academy/blob/main/project/EXAPUNKS/EXAPunks-Part-1.md)
 
-[Part 2](https://github.com/davewadestein/ADI-Learn-to-Code/blob/main/projects/EXAPUNKS/EXAPunks-Part-2.md)
+[Part 2](https://github.com/davewadestein/CVent-Apprenti-Academy/blob/main/project/EXAPUNKS/EXAPunks-Part-2.md)
 
-[Part 3](https://github.com/davewadestein/ADI-Learn-to-Code/blob/main/projects/EXAPUNKS/EXAPunks-Part-3.md)
+[Part 3](https://github.com/davewadestein/CVent-Apprenti-Academy/blob/main/project/EXAPUNKS/EXAPunks-Part-3.md)
 
-[Part 4](https://github.com/davewadestein/ADI-Learn-to-Code/blob/main/projects/EXAPUNKS/EXAPunks-Part-4.md)
+[Part 4](https://github.com/davewadestein/CVent-Apprenti-Academy/blob/main/project/EXAPUNKS/EXAPunks-Part-4.md)
 
 # Our process should be as follows:
 0. the entire process should be infused with the idea that we are working together
