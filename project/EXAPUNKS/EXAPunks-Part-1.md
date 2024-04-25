@@ -24,9 +24,9 @@ As you can see, all of the above operations put their result into a _register_, 
 operands can be either registers or numbers.
 
 Here are a few parsing constraints:
-* Any unknown instruction, register or invalid number should result in a crash
-* Leading spaces (at the start of a line of code) should be safely ignored
-* Empty lines should be ignored
+* Any unknown instruction, register or invalid number should result in an exception thrown (stopping the program) 
+* Leading spaces (at the start of a line of code) should be ignored
+* Blank lines should be ignored
 
 Write a program that can understand a piece of code with any of the above
 instructions and run it.
@@ -46,13 +46,8 @@ instructions and run it.
    that you could check if instructions and their operands are valid.
 
 3. Before implementing the instructions, think about how you want to handle
-   the registers. Here are some suggestions:
-   * Just use variables to represent the registers
-   * Try a functional approach, where the current register values is passed to
-     functions which represent the instructions; those functions then return the new
-     values of the registers
-   * Try an object-oriented approach–with this kind of solution, the registers
-     `X` and `T` could be attributes of an EXA object
+   the registers. Perhaps best to use an OO approach–with this kind of solution,
+   the registers `X` and `T` could be attributes of an EXA object
 
 4. If you manage to design the code parsing and register handling carefully,
    actually implementing the instructions should be fairly easy! The only
@@ -110,44 +105,3 @@ What are the values of the registers at the end? As a bonus, can you identify
 what operation the last five instructions are effectively doing?
 
 [Part 2](https://github.com/davewadestein/ADI-Learn-to-Code/blob/main/projects/EXAPUNKS/EXAPunks-Part-2.md)
-
-## Thoughts on algorithm
-* read the file a line at a time
-* skip if empty line
-* validate the instruction (first word on the line...COPY, ADDI, etc.)
-  * if word is not in my list of valid instructions then bail out
-  * import sys ... sys.exit(1) # terminate the program
-  * otherwise, it's valid and COPY is the odd one out (takes 2 arguments vs. 3 arguments)
-  * count the number of arguments on the line and be sure it's 3 or 4 as needed
-    * if not correct, then bail out
-
-```
-  valid_commands = 'COPY ADDI ...'.split() # this could be a tuple or some other container
-
-  def COPY(arguments): # words[1:], i.e., the slice of the original line which excludes the instruction
-
-  def validate_args(num_args, ... ) #: pass in "blueprint" for these arguments
-      # this function's job might be to validate number of args
-      # and "type" of arguments (i.e., they are numbers when they should be and
-      # registers when they should be)
-      if len(arguments) != num_args: # not valid for COPY
-          CRASH!
-      # COPY R/N R
-      # How do I know that argument[1] is a Register?
-      # COPY(['X', 'FOO'])
-      
-      # classify each argument as register or number
-
-      if we expect a register only and arg not in valid_registers: # [ 'X', 'T' ]
-          CRASH!
-
-      # if we can accept a number here, how do we know it's a number?
-      try:
-          arg = int(arg) # attempt to int-ify the argument
-          # we found a number!
-      except ValueError:
-          # this is not a number, so CRASH!
-
-      # suppose the command was COPY T X and T has 25 in it right now
-      return tuple of the validated args converted to operands... (25, 'X')
-```
