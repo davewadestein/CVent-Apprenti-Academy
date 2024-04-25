@@ -54,11 +54,12 @@ abbreviations will be used to represent required operands:
 
 [Part 4](https://github.com/davewadestein/CVent-Apprenti-Academy/blob/main/project/EXAPUNKS/EXAPunks-Part-4.md)
 
-# Our process should be as follows:
-0. the entire process should be infused with the idea that we are working together
-1. understand the problem
-2. identify major components (modules) / pseudocode to explain how they communicate 
-3. identify functions (and how they will work) to perform the tasks noted in step 2 (possibly stub them out)
-4. do TDD per module, group like functions in TDD together (generate test_*.py files)
-5. make tests pass, you can decide who does what
-6. put it all together and run the tests here
+# Your process should be as follows
+0. The entire process should be infused with the idea that we are working together
+1. Be sure you understand the problem (talk it thru w/partner, or ask me if anything is unclear)
+2. Identify major components (modules) / perhaps genrate pseudocode to explain how they communicate 
+3. Identify functions (and how they will work) to perform the tasks noted in step 2 (possibly stub them out)
+4. Do TDD per module, group like functions in TDD together (generate __`test_*.py`__ files)
+5. Make tests pass, you can decide who does what. I'd like each partner to have experience as both the "driver" (coder) and "navigator" (tester). You could, of course, collaborate on both parts, i.e., write tests together, then write code together ("pair programming") to get the tests to pass.
+6. Put it all together and run the tests that are included here in the description
+7. Have fun!
