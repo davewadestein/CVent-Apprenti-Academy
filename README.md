@@ -1,5 +1,9 @@
 # CVent-Apprenti-Academy
 
+## Thu 4/25
+* TDD example
+* Project
+  
 ## Wed 4/24
 * mid-morning poll: https://xoyondo.com/op/y79ept6rp3vkboy
 * let's get back to coding–I spent too much time on additional topics yesterday
@@ -13,7 +17,7 @@
   * https://xoyondo.com/op/ug0t1ojhbpuvw2y
 * mini-project
 * ~~more OO: Class Methods / Static Methods / ...~~
-  * The __`collections`__ module: Better versions of containers
+  * ~~The __`collections`__ module: Better versions of containers~~
 * test-driven development / testing
   
 ## Mon 4/22
@@ -50,6 +54,10 @@
 * How to reach me: dave@developintelligence.com
 
 # Recordings
+* Apr 24: https://pluralsight.zoom.us/rec/share/Iad2IaOH17yVRSxptLH2LF5HZ3Glbl95216D1jR3Z-4ufqPlu_p6w0SS7rkYQidq.VP3npY0jQhpAwWYR 
+* __`'Who?'[-1] + chr(ord('*') - 6) + 'TNT'[-1] + str(int(6.19)) + 'hi'[0].upper() + 'Qkw'.swapcase()`__
+* Apr 23: https://pluralsight.zoom.us/rec/share/VW6QFvTRpqsH0_5OmpfReuwz7eMJklCcz-mZ0p5i30SIcrMD76G8TYHWn7bAj5v7.LBLpWvXA_JDaIXeh 
+* __`str(95 % 10) + '*' * 1 + 'foodie'[-3] + 'Oi!'[-1:] + '&%Hn'[::-1]`__
 * Apr 22: https://pluralsight.zoom.us/rec/share/sjv7aV4OjI5asTAIctCFRwevqb-_Gh9X4sFm3zcvBz1uaHj24iY4kbDh7k-wZhM.ycYHMUx6XVhHk45q 
 * __`'f'.upper() + chr(35) + 'K'.lower() * 2 + str(8 // 4) + 'D'.lower() + 'pY'.swapcase()`__
 * Apr 16: https://pluralsight.zoom.us/rec/share/YqcV4AG9h8THki0L2wEJwh2WsRud4ugyHVa7HJQa026qY1--cTc_A1As1-231uMY.0XlAbAUXJ4gCVTnO 
