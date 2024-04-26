@@ -58,6 +58,8 @@
 * How to reach me: dave@developintelligence.com
 
 # Recordings
+* Apr 25: https://pluralsight.zoom.us/rec/share/rnLUschB2vAQKwgw0KpJiMjr2qnFawFm4ARcsmS4TGhbkxSXcJGjmZk0Fq2IIGRF.IWur2V0_D9b1DnLh 
+* __`'+' * 1 + '100%'[-1] + 'fpdM'.swapcase() + '007'[1:]`__
 * Apr 24: https://pluralsight.zoom.us/rec/share/Iad2IaOH17yVRSxptLH2LF5HZ3Glbl95216D1jR3Z-4ufqPlu_p6w0SS7rkYQidq.VP3npY0jQhpAwWYR 
 * __`'Who?'[-1] + chr(ord('*') - 6) + 'TNT'[-1] + str(int(6.19)) + 'hi'[0].upper() + 'Qkw'.swapcase()`__
 * Apr 23: https://pluralsight.zoom.us/rec/share/VW6QFvTRpqsH0_5OmpfReuwz7eMJklCcz-mZ0p5i30SIcrMD76G8TYHWn7bAj5v7.LBLpWvXA_JDaIXeh 
