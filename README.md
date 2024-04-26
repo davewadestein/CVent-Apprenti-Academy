@@ -1,5 +1,9 @@
 # CVent-Apprenti-Academy
 
+## Fri 4/25
+* project poll https://xoyondo.com/op/gtpmiyu810t3zbj
+* Didn't this repo start out empty???
+  
 ## Thu 4/25
 * TDD example
 * Project
