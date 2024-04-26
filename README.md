@@ -2,6 +2,7 @@
 
 ## Fri 4/25
 * project poll https://xoyondo.com/op/gtpmiyu810t3zbj
+* Lyft AI story
 * Didn't this repo start out empty???
   
 ## Thu 4/25
