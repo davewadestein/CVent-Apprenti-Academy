@@ -1,4 +1,5 @@
 import pytest
+import pathlib
 from exa import read_code
 
 def test_read_code():
@@ -8,7 +9,8 @@ def test_read_code():
     # now that we've created a file be sure
     # we can read from the file
     code = read_code('testfile')
-    assert code == [['COPY', '70', 'X']]
+    assert code == [['COPY', '70', 'X'], ['END']]
+    pathlib.Path("testfile").unlink() # clean up by removing file
 
 
 def test_read_code_file_not_exist():

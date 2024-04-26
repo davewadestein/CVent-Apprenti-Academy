@@ -1,12 +1,36 @@
 """Code runner...take lines of code, interpret and execute them"""
-from registers import set_register, get_register, is_valid_register_name
-from registers import print_registers
-from exceptions import IllegalInstructionError
+import registers, labels
+
+_instruction_pointer = 0
+
+
+def get_instruction_pointer():
+    return _instruction_pointer
+
+
+def set_instruction_pointer(value):
+    global _instruction_pointer
+
+    _instruction_pointer = value
+
+
+def increment_instruction_pointer():
+    global _instruction_pointer
+
+    _instruction_pointer += 1
+
+
+def setup_labels(code):
+    """Make a pass through code to find all MARK statements."""
+    for instruction_ptr, (instruction, *args) in enumerate(code):
+        if instruction == 'MARK':
+            labels.make_label(args[0], instruction_ptr)
+
 
 def print_state(statement=None):
     if statement:
         print(f'{" ".join(statement):<12}', end=' ... ') # print line of code
-    print_registers()
+    registers.print_registers()
 
 
 # Here we implement the EXA instructions
@@ -16,13 +40,13 @@ def print_state(statement=None):
 def COPY(value, register_name):
     """Copy the value of the first operand into the second operand"""
     value = get_register_contents_or_value(value)
-    set_register(register_name, value)
+    registers.set_register(register_name, value)
 
 
 def ADDI(value1, value2, register_name):
     """Add the value of the first operand to the value of the second
     operand and store the result in the third operand"""
-    set_register(register_name,
+    registers.set_register(register_name,
                  get_register_contents_or_value(value1) +
                  get_register_contents_or_value(value2)
     )
@@ -30,7 +54,7 @@ def ADDI(value1, value2, register_name):
 
 def SUBI(value1, value2, register_name):
     """Same as ADDI, for substraction"""
-    set_register(register_name,
+    registers.set_register(register_name,
                  get_register_contents_or_value(value1) -
                  get_register_contents_or_value(value2)
     )
@@ -38,7 +62,7 @@ def SUBI(value1, value2, register_name):
 
 def MULI(value1, value2, register_name):
     """Same as ADDI, for multiplication"""
-    set_register(register_name,
+    registers.set_register(register_name,
                  get_register_contents_or_value(value1) *
                  get_register_contents_or_value(value2)
     )
@@ -46,14 +70,14 @@ def MULI(value1, value2, register_name):
 
 def DIVI(value1, value2, register_name):
     """Same as ADDI, for integral division"""
-    set_register(register_name,
+    registers.set_register(register_name,
                  get_register_contents_or_value(value1) //
                  get_register_contents_or_value(value2)
     )
 
 def MODI(value1, value2, register_name):
     """Same as ADDI, for modulo"""
-    set_register(register_name,
+    registers.set_register(register_name,
                  get_register_contents_or_value(value1) %
                  get_register_contents_or_value(value2)
     )
@@ -76,9 +100,27 @@ def TEST(operand1, oper, operand2):
         get_register_contents_or_value(operand1),
         get_register_contents_or_value(operand2)
     )
+    print(f'TEST {operand1} {oper} {operand2} = {result}')
+    registers.set_register('T', int(result)) # convert Bool to into
 
-    set_register('T', int(result)) # convert Bool to into
 
+def MARK(label):
+    """Nothing to do since we've already marked labels."""
+    pass
+
+
+def TJMP(mark):
+    if registers.get_register('T'):
+        set_instruction_pointer(labels.get_label(mark))
+
+
+def FJMP(mark):
+    if not registers.get_register('T'):
+        set_instruction_pointer(labels.get_label(mark))
+
+
+def JUMP(mark):
+    set_instruction_pointer(labels.get_label(mark))
 
 # Map function names to functions which implement them
 # Must be defined *after* the functions!
@@ -91,6 +133,10 @@ func_mapper = {
     "DIVI": DIVI,
     "MODI": MODI,
     "TEST": TEST,
+    "MARK": MARK,
+    "TJMP": TJMP,
+    "FJMP": FJMP,
+    "JUMP": JUMP,
 }
 
 def run_statement(statement):
@@ -99,18 +145,18 @@ def run_statement(statement):
     # break it into instruction (e.g,. COPY, ADDI, etc.)
     # followed by arguments
     instruction, args = statement[0], statement[1:]
-
     if instruction in func_mapper: # valid instruction?
         # call the appropriate function and pass the args
         func_mapper[instruction](*args)
     else:
-        raise IllegalInstructionError(instruction)
+        raise Exception(f'Illegal instruction: {instruction}')
 
 
 def run_code(code):
-    for statement in code:
-        run_statement(statement)
-        print_state(statement)
+    while code[get_instruction_pointer()][0] != 'END':
+        print_state(code[get_instruction_pointer()])
+        run_statement(code[get_instruction_pointer()])
+        increment_instruction_pointer()
 
 # Since all operations take a register OR a number as the
 # first argument, it would be good to have a function which
@@ -120,8 +166,8 @@ def get_register_contents_or_value(value):
     """Return a value, either a number or the contents
     of a register.
     """
-    if is_valid_register_name(value): # instruction specifies a registers
-        return get_register(value)
+    if registers.is_valid_register_name(value): # instruction specifies a registers
+        return registers.get_register(value)
 
     # otherwise we expect it to be a number -9999..9999
     try:

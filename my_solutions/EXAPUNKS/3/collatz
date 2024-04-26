@@ -1,0 +1,13 @@
+COPY 198 X # Compute Collatz series for 198
+MARK LOOP
+TEST X = 1 # done?
+TJMP END
+MODI X 2 T # even?
+TJMP ODD # remainder means odd
+DIVI X 2 X
+JUMP LOOP
+MARK ODD # labels can be forward references
+MULI X 3 X
+ADDI X 1 X
+JUMP LOOP
+MARK END
