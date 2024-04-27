@@ -4,6 +4,7 @@
 * added my solution for EXAPUNKS Part 4 (and also Blackjack)
 * I ran out of steam a bit in that not all of my functions/methods are exhaustively tested
 * I'll work on the solution for EXAPUNKS Part 5 and let you know when it's posted
+* Feel freee to open up an issue here on this page for anything I'm missing (or any mistakes you find)
   
 ## Fri 4/25
 * project poll https://xoyondo.com/op/gtpmiyu810t3zbj
