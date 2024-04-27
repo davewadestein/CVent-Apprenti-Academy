@@ -1,5 +1,10 @@
 # CVent-Apprenti-Academy
 
+## Sat 4/26
+* added my solution for EXAPUNKS Part 4 (and also Blackjack)
+* I ran out of steam a bit in that not all of my functions/methods are exhaustively tested
+* I'll work on the solution for EXAPUNKS Part 5 and let you know when it's posted
+  
 ## Fri 4/25
 * project poll https://xoyondo.com/op/gtpmiyu810t3zbj
 * Lyft AI story
