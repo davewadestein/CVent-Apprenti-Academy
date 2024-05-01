@@ -1,5 +1,8 @@
 # CVent-Apprenti-Academy
 
+## Tue 4/30
+* I updated the [EXAPUNKS Part 5 page](https://github.com/davewadestein/CVent-Apprenti-Academy/blob/main/project/EXAPUNKS/EXAPunks-Part-5.md) with a couple of example programs you can try. The examples currently only leverage the __`MAKE`__, __`RAND`__, and timer functions. Soon I'll put up some examples which use the stack instructions as well, along with my solution.
+  
 ## Sat 4/26
 * added my solution for EXAPUNKS Part 4 (and also Blackjack)
 * I ran out of steam a bit in that not all of my functions/methods are exhaustively tested
