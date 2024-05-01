@@ -6,10 +6,10 @@
    <br>Generate a random number between LO and HI and store it in the destination register.
 
 * __`MAKE`__
-   <br>Create a new file inside the EXA. (In part 4 we just used previously-created files, but now we can create our own.
-You may have noticed that the __`FILE`__ command from part 4 wasn't really used. The idea is that first you do a __`MAKE`__
-which creates a new file inside the EXA, then the __`FILE`__ command will tell you the file's ID–you can generate a unique ID
-for each file that is created.)
+   <br>Create a new file inside the EXA. (In part 4 we just used previously-created files, but now we
+can create our own. You may have noticed that the __`FILE`__ command from part 4 wasn't really used.
+The idea is that first you do a __`MAKE`__ which creates a new file inside the EXA, then the __`FILE`__
+command will tell you the file's ID–you can generate a unique ID for each file that is created.)
 
 ### ...and some instructions I made up
 
@@ -47,3 +47,51 @@ to test, as you'd have to check elapsed time. It's possible, but not required.
 
 * __`SIZE R`__
 <br>Place the size of the current stack (0 if empty) into R. An error if no current stack
+
+### Example
+
+Now that we have the __`MAKE`__ instruction to create a file with a random name (number), we no
+longer have to pre-load files into the EXA.
+
+      MAKE            # create a file...our new command
+      FILE T          # put file "handle" into T
+      GRAB T          # grab that file (i.e., open it)
+      COPY T F        # write name of file into first position in file
+      TSTART          # start a timer
+      COPY 1 X
+      MARK FILE_WRITE # write 1..10 into file
+      COPY X F        # write X into file
+      ADDI X 1 X
+      TEST X > 10
+      FJMP FILE_WRITE
+      SEEK -9999      # go to beginning of current file
+      COPY F T        # get name of file
+      SEEK -9999      # go back to beginning of current file
+      VOID            # delete the ID of the file
+      COPY 0 X
+      MARK FILE_READ
+      ADDI F X X      # sum up contents of first file
+      TEST EOF        # all read?
+      FJMP FILE_READ
+      DROP            # drop first file
+      MAKE            # make a second file
+      FILE T
+      GRAB T
+      COPY X F        # put result into the second file
+      DROP
+      TSTOP           # stop timer
+
+Here's another example that just leverages the timer functions...
+
+      TSTART
+      SLEEP 1
+      TSTOP
+
+My solution produces the following output when run on the short example above:
+
+      TSTART             ... X = 0  T = 0  F = None
+      ===> Timer started!
+      SLEEP 1            ... X = 0  T = 0  F = None
+      ===> Sleeping for 1 second
+      TSTOP              ... X = 0  T = 0  F = None
+      ===> Elapsed time: 1.0053377151489258
