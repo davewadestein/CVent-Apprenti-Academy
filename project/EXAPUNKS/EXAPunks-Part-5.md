@@ -31,16 +31,16 @@ to test, as you'd have to check elapsed time. It's possible, but not required.
 <br>Create a "stack" inside the EXA. Each stack will have a unique numeric ID, just like we are doing with files.
 
 * __`STACK R`__
-<br>Get the ID of the current list. Analogous to the __`FILE R`__ instruction.
+<br>Get the ID of the current stack. Analogous to the __`FILE R`__ instruction.
 
 * __`GRABS R/N`__
-<br>Grab a list with the specified ID. An error if the list does not exist.
+<br>Grab a stack with the specified ID. An error if the stack does not exist.
 
 * __`DELS`__
 <br>Delete the current stack. An error if there is no current stack (i.e., it was not preceded by __`GRABS`__).
 
 * __`PUSH R/N`__
-<br>Append the number or contents of register to the current list. An error if no current stack.
+<br>Append the number or contents of register to the current stack. An error if no current stack.
 
 * __`POP R`__
 <br>Pop the top/latest item from the stack and put it into R. An error if no current stack or current stack is empty.
